@@ -27,7 +27,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define USE_SERIAL
 // #define USE_I2C
-
 /* Select hand configuration */
 
 //#define MASTER_LEFT
@@ -40,5 +39,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 SONG(COLEMAK_SOUND) \
                               }
 #endif
+
+#define PREVENT_STUCK_MODIFIERS
 
 #endif
