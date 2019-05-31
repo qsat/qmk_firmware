@@ -36,6 +36,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 SONG(COLEMAK_SOUND) \
                               }
 #endif
-
-#define PREVENT_STUCK_MODIFIERS
 #undef NO_ACTION_TAPPING
+#define TAPPING_TERM 150
+// #define RETRO_TAPPING
+#define PREVENT_STUCK_MODIFIERS
+
+// #define IGNORE_MOD_TAP_INTERRUPT
+#define PERMISSIVE_HOLD
