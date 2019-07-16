@@ -18,16 +18,12 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef CONFIG_USER_H
-#define CONFIG_USER_H
-
-#include "../../config.h"
+#pragma once
 
 /* Use I2C or Serial, not both */
 
 #define USE_SERIAL
 // #define USE_I2C
-
 /* Select hand configuration */
 
 //#define MASTER_LEFT
@@ -40,5 +36,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 SONG(COLEMAK_SOUND) \
                               }
 #endif
+#undef NO_ACTION_TAPPING
+#define TAPPING_TERM 150
+// #define RETRO_TAPPING
+#define PREVENT_STUCK_MODIFIERS
 
-#endif
+// #define IGNORE_MOD_TAP_INTERRUPT
+#define PERMISSIVE_HOLD
