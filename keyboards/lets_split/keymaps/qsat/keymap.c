@@ -98,7 +98,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_LOWER] = LAYOUT_ortho_4x12( \
   _______, KC_EXLM,   KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR,    KC_ASTR,    KC_LPRN, KC_RPRN,    _______, \
   _______, S(KC_GRV), _______, _______, _______, _______, _______, KC_UNDS,    KC_PLUS,    KC_LCBR, KC_RCBR,    _______, \
-  _______, _______,   _______, _______, _______, _______, _______, S(KC_NUHS), S(KC_QUOT), KC_PIPE, S(KC_SLSH), _______, \
+  _______, KC_BSLS,   _______, _______, _______, _______, _______, S(KC_QUOT), S(KC_COMM), S(KC_DOT), S(KC_SLSH), _______, \
   KC_LEFT, KC_DOWN,   KC_UP,   KC_ESC,  _______, _______, KC_TAB,  _______,    KC_ESC,     KC_DOWN, KC_UP,      KC_RIGHT \
 ),
 
@@ -114,10 +114,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_RAISE] = LAYOUT_ortho_4x12( \
-  _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_DEL, \
-  _______, KC_GRV,  _______, _______, _______, _______, _______, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, _______, \
-  _______, _______, _______, _______, _______, _______, _______, _______, KC_QUOT, KC_BSLS, KC_SLSH, _______, \
-  KC_MNXT, KC_VOLD, KC_VOLU, KC_MPLY, _______, _______, _______, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT \
+  _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,       KC_9,      KC_0,    KC_DEL, \
+  _______, KC_GRV,  _______, _______, _______, _______, _______, KC_MINS, KC_EQL,     KC_LBRC,   KC_RBRC, _______, \
+  _______, KC_PIPE, _______, _______, _______, _______, _______, KC_QUOT, S(KC_COMM), S(KC_DOT), KC_SLSH, _______, \
+  KC_MNXT, KC_VOLD, KC_VOLU, KC_MPLY, _______, _______, _______, _______, KC_LEFT,    KC_DOWN,   KC_UP,   KC_RIGHT \
 ),
 
 /* Adjust (Lower + Raise)
