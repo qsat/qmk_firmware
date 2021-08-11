@@ -43,10 +43,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *               `--------------------'           `--------------------'
  */
 [_QWERTY] = LAYOUT( \
-   KC_Q,        KC_W,           KC_E,          KC_R,    KC_T,          KC_Y,   KC_U,  KC_I,         KC_O,           KC_P, \
-   KC_A,        KC_S,           KC_D,          KC_F,    KC_G,          KC_H,   KC_J,  KC_K,         KC_L,           ALT_T(KC_SCLN), \
-   CTL_T(KC_Z), ALT_T(KC_X),    KC_C,          KC_V,    KC_B,          KC_N,   KC_M,  KC_COMM,      ALT_T(KC_DOT),  CTL_T(KC_ENT), \
-                                GUI_T(KC_ESC), LOWER,   SFT_T(KC_ENT), KC_SPC, RAISE, GUI_T(KC_BSPC) \
+   KC_Q,        KC_W,           KC_E,          KC_R,    KC_T,          KC_Y,          KC_U,  KC_I,         KC_O,           KC_P, \
+   KC_A,        KC_S,           KC_D,          KC_F,    KC_G,          KC_H,          KC_J,  KC_K,         KC_L,           KC_SCLN, \
+   CTL_T(KC_Z), ALT_T(KC_X),    KC_C,          KC_V,    KC_B,          KC_N,          KC_M,  KC_COMM,      ALT_T(KC_DOT),  CTL_T(KC_TAB), \
+                                GUI_T(KC_ESC), LOWER,   SFT_T(KC_ENT), SFT_T(KC_SPC), RAISE, GUI_T(KC_BSPC) \
 ),
 
 /* Raise
@@ -65,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,       KC_9,      KC_0,\
   KC_GRV,  _______, _______, _______, _______, _______, KC_MINS, KC_EQL,     KC_LBRC,   KC_RBRC, \
   KC_PIPE, _______, _______, _______, _______, _______, KC_QUOT, S(KC_COMM), S(KC_DOT), KC_SLSH, \
-                    _______,  _______, _______, _______,  _______, _______\
+                    _______, ADJUST,  _______, _______,  _______, _______\
 ),
 
 /* Lower
@@ -84,7 +84,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_EXLM,   KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR,    KC_ASTR,    KC_LPRN,   KC_RPRN, \
   S(KC_GRV), _______, _______, _______, _______, _______, KC_UNDS,    KC_PLUS,    KC_LCBR,   KC_RCBR, \
   KC_BSLS,   _______, _______, _______, _______, _______, S(KC_QUOT), S(KC_COMM), S(KC_DOT), S(KC_SLSH), \
-                      _______, _______, _______, KC_TAB,  _______,    KC_ESC \
+                      _______, _______, _______, _______,  ADJUST,    _______\
 ),
 
 
@@ -157,3 +157,4 @@ void matrix_scan_user(void) {
 
 void led_set_user(uint8_t usb_led) {
 }
+
