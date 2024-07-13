@@ -82,7 +82,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_LOWER] = LAYOUT( \
   KC_EXLM,   KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR,    KC_ASTR,    KC_LPRN,   KC_RPRN, \
-  S(KC_GRV), _______, _______, _______, _______, _______, KC_UNDS,    KC_PLUS,    KC_LCBR,   KC_RCBR, \
+  S(KC_GRV), KC_F13,  KC_F14,  KC_F15,  _______, _______, KC_UNDS,    KC_PLUS,    KC_LCBR,   KC_RCBR, \
   KC_BSLS,   _______, _______, _______, _______, _______, S(KC_QUOT), S(KC_COMM), S(KC_DOT), S(KC_SLSH), \
                       _______, _______, _______, _______,  ADJUST,    _______\
 ),
